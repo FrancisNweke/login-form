@@ -1,0 +1,19 @@
+1] First, execute Sql Script for Login Application Database. 
+This sql script creates a database for the application.
+
+2] Second, execute Sql Script for Users Table. 
+This sql script creates a users table.
+
+-- Restore the database on mssql server management studio
+3] Now, execute Sql Script to Create User.
+Setup Username : admin , Setup Password : hashtest , Setup ClientKey : 11545825-7f1d-4c06-b372-f91243093e81-nef
+NB: Change Password and ClientKey on first login.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4] Search Edit environment variables for account then Open. 
+
+5] Create new variable; variable name : dbCon and variable value :  Data Source=SERVER_NAME;Initial Catalog=LoginAppDB;Persist Security Info=True;User ID=SQL_USER_ID;Password=SQL_USER_PASSWORD;Integrated Security=True; Connect Timeout=30
+NB: REPLACE SERVER-NAME, SQL_USER_ID, SQL_USER_PASSWORD with YOUR database engine credentials.
+
+6] You can run the application; LoginForm (Application)
